@@ -126,23 +126,41 @@ For deterministic testing without moving physical potentiometers:
 
 ```bash
 # Clone the repo
-git clone https://github.com/<your-username>/ev-adas-dashboard.git
-cd ev-adas-dashboard
+git clone https://github.com/CommodoreScofield/RealTime_EV_ADAS_Dashboard.git
+
 
 # Install Python dependencies
 pip install matplotlib numpy pyserial
 ```
-
+A. Procedural Method
+   
 1. Open the firmware project in STM32CubeIDE and build it.
 2. Load the built binary in PicsimLab (or flash to a real STM32 Blue Pill).
 3. Run the dashboard:
 
 ```bash
 # With real/simulated hardware on a serial port
-python dashboard.py --port COM3
+python ev_dash.py --port COM1
 
 # Demo mode, no hardware required
-python dashboard.py --demo
+python ev_dash.py --demo
+```
+or 
+
+B. Recommended Method
+1. Download the binary file and python file.
+2. Setup VSPE (COM1 and COM4) Virtual Pair.
+3. Build the appropriate board in Picsimlab and configure it.
+4. Load the binary file in Picsimlab
+5. Run Command Prompt as Administrator
+6. Run the following commands
+  
+```bash
+# With real/simulated hardware on a serial port
+python ev_dash.py --port COM1
+
+# Demo mode, no hardware required
+python ev_dash.py --demo
 ```
 
 ---
