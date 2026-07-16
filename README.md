@@ -44,6 +44,8 @@ The firmware models EV dynamics and an ultrasonic-based ADAS engine, escalates f
 | **3. UART (115200 bps)** | Two telemetry frames per cycle: EV state + ADAS state |
 | **4. Python Dashboard** | Parses incoming frames and renders live visualizations |
 
+<img width="1624" height="969" alt="ChatGPT Image Jul 8, 2026, 02_55_27 PM" src="https://github.com/user-attachments/assets/c4e44073-46a6-4e21-9333-9cdeae62e0f8" />
+
 ### Real industry ↔ project mapping
 
 | Real Industry Component | This Project |
